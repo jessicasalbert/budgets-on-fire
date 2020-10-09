@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block title %}FAQ - Budgets on Fire{% endblock %}
+
+{% block nav %}
+  <li><a href="/">Home</a></li>
+{% if session.user_id %}
+  <li><a href="/money">My Money</a></li>
+  <li><a href="/account">My Account</a></li>
+  <li class="active"><a href="/faq">Money FAQ</a></li>
+  <li><a href="/logout">Logout</a></li>
+{% else %}
+  <li><a href="/about">About</a></li>
+  <li><a href="/register">Register</a></li>
+  <li><a href="/login">Login</a></li>
+{% endif %}
+{% endblock %}
+
+{% block main %}
+
+<!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>NO SUCH THING AS A SILLY QUESTION</h2>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class='bx bx-meteor'></i></div>
+              <h4 class="title"><a href="https://www.choosefi.com/start-page/" target="_blank">What's 'FIRE'?</a></h4>
+              <p class="description">'Financial Independence Retire Early' is the idea that you can buy freedom by saving enough money such that you no longer depend on a 9-5 to support yourself.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class='bx bx-money'></i></box-icon></div>
+              <h4 class="title"><a href="https://www.mrmoneymustache.com/2012/01/13/the-shockingly-simple-math-behind-early-retirement/" target="_blank">How much should I be saving?</a></h4>
+              <p class="description">The simple answer: as much as you can! We like to aim for a 50% savings rate, but any amount of saving is better than none.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class='bx bx-line-chart' ></i></div>
+              <h4 class="title"><a href="https://jlcollinsnh.com/stock-series/" target="_blank">What do I invest in?</a></h4>
+              <p class="description">We recommend broad-based index funds, which you can 'set and forget.' Avoid actively managed funds with high fees which will eat into your earnings.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bxs-landmark'></i></div>
+              <h4 class="title"><a href="https://www.madfientist.com/traditional-ira-vs-roth-ira/#:~:text=When%20choosing%20between%20a%20Traditional,pay%20the%20tax%20up%20front." target="_blank">Roth vs. Traditional?</a></h4>
+              <p class="description">Roth: pay taxes now.<br> Traditional: pay taxes later. <br> Consider your current tax rate and how much you plan to spend in retirement.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bxs-calculator' ></i></div>
+              <h4 class="title"><a href="https://www.mrmoneymustache.com/2012/05/29/how-much-do-i-need-for-retirement/" target="_blank">What's my 'FI number'?</a></h4>
+              <p class="description">The 4% rule of thumb suggests that you've reached FI when you have saved 25x your annual expenses. You can withdraw 4% each year and maintain your principal investment.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class='bx bxs-briefcase'></i></i></div>
+              <h4 class="title"><a href="https://www.mrmoneymustache.com/2018/10/05/the-fire-movement/" target="_blank">...but I like my job?</a></h4>
+              <p class="description">We emphasize the "FI" rather than the "RE". FIRE simply gives you options and the freedom to choose. If you choose to continue work, that's awesome too!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    
+{% endblock %}

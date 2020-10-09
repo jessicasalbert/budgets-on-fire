@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}Register - Budgets on Fire{% endblock %}
+
+{% block nav %}
+<li><a href="/">Home</a></li>
+{% if session.user_id %}
+<li><a href="/money">My Money</a></li>
+<li><a href="/account">My Account</a></li>
+<li><a href="/faq">Money FAQ</a></li>
+<li><a href="/logout">Logout</a></li>
+{% else %}
+<li><a href="/about">About</a></li>
+<li class="active"><a href="/register">Register</a></li>
+<li><a href="/login">Login</a></li>
+{% endif %}
+{% endblock %}
+      
+{% block main %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Register</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Register</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container"style="text-align:center;" >
+<center>
+        <div class="row" style="display:block;margin:0px auto;text-align:center;" >
+
+          
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up">
+              <form action="/register" method="post">
+                <h3>Name</h3>
+                <input autocomplete="off" autofocus name="name" type="text">
+                <h3>Username</h3>
+                <input autocomplete="off" autofocus name="username" type="text">
+                <h3>Password</h3>
+                <input name="password" type="password">
+                <h3>Confirm password</h3>
+                <input name="password2" type="password">
+                <div class="btn-wrap">
+                  <button class="featured btn-buy" type="submit">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+
+        </div>
+        </center>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+{% endblock %}
+ 

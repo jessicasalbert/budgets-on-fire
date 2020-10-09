@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+
+
+{% block title %}About - Budgets on Fire{% endblock %}
+
+{% block nav %}
+<li><a href="/">Home</a></li>
+{% if session.user_id %}
+<li><a href="/money">My Money</a></li>
+<li><a href="/account">My Account</a></li>
+<li><a href="/faq">Money FAQ</a></li>
+<li><a href="/logout">Logout</a></li>
+{% else %}
+<li class="active"><a href="/about">About</a></li>
+<li><a href="/register">Register</a></li>
+<li><a href="/login">Login</a></li>
+{% endif %}
+{% endblock %}
+
+
+
+{% block main %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>About</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-up">Personal finance made simple</h3>
+              <p data-aos="fade-up">
+                Budgets on Fire was designed to offer a simple alterative to complex budgeting applications. It's an expense tracker intended to promote financial awareness and accountabilty. 
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class='bx bxs-coin'></i>
+                  <h4>Track your spending</h4>
+                  <p>Record your purchases here and let us keep track of your accounts.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class='bx bx-line-chart-down' ></i>
+                  <h4>Categorize expenses</h4>
+                  <p>Where is your money going? We'll help you figure it out.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class='bx bx-coin-stack' ></i>
+                  <h4>Amplify savings</h4>
+                  <p>Becoming more mindful of spending = more savings.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class='bx bx-question-mark' ></i>
+                  <h4>Have a question?</h4>
+                  <p>We're here to help! We'll be with you every step of the way.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+{% endblock %}
