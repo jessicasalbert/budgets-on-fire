@@ -8,9 +8,9 @@ Users are able to register/login to view protected pages, enter expenses, keep a
 
 ## Resources used
 
-Front-end: Bootstrap template
-Back-end: Python on Flask
-Database: SQLite3
+- Front-end: Bootstrap template
+- Back-end: Python on Flask
+- Database: SQLite3
 
 ## Installation instructions
 
