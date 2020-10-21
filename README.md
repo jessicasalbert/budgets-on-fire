@@ -15,3 +15,6 @@ Database: SQLite3
 ## Installation instructions
 
 Download and run "flask run" in terminal to view website locally in browser.
+
+
+![Alt Text](https://media.giphy.com/media/CDCudMeQIq1bc54EiD/giphy.gif)
